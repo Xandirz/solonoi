@@ -285,6 +285,36 @@
       color: var(--text);
       margin-bottom: 14px;
     }
+    .menu-categories {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+    .menu-category {
+      min-height: 42px;
+      padding: 0 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(45, 24, 16, 0.18);
+      background: var(--white);
+      color: var(--text-mid);
+      font-family: 'Inter', Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      cursor: default;
+      box-shadow: 0 3px 12px rgba(45, 24, 16, 0.05);
+    }
+    .menu-category:disabled {
+      opacity: 1;
+    }
+    .menu-category.is-active {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: var(--white);
+      box-shadow: 0 8px 22px rgba(193, 95, 95, 0.22);
+    }
     h2 {
       font-family: 'Playfair Display', Georgia, serif;
       font-size: clamp(36px, 5vw, 58px);
@@ -522,6 +552,14 @@
       <div class="container">
         <div class="section-header fade-up">
           <div class="section-eyebrow">Наше меню</div>
+          <div class="menu-categories" aria-label="Категории меню">
+            <button class="menu-category" type="button" disabled>Десерты</button>
+            <button class="menu-category" type="button" disabled>Завтраки</button>
+            <button class="menu-category" type="button" disabled>Закуски</button>
+            <button class="menu-category" type="button" disabled>Напитки</button>
+            <button class="menu-category" type="button" disabled>Суп</button>
+            <button class="menu-category is-active" type="button" disabled aria-pressed="true">Фокачча</button>
+          </div>
         </div>
 
         <div class="menu-grid">
@@ -659,8 +697,8 @@
               <div>
                 <div class="contact-item-label">Время работы</div>
                 <div class="contact-item-value">
-                  Пн — Чт: 09:00 – 22:00<br>
-                  Пт — Сб: 09:00 – 23:00<br>
+                  Пн-Чт: 09:00 – 22:00<br>
+                  Пт-Сб: 09:00 – 23:00<br>
                   Вс: 10:00 – 22:00
                 </div>
               </div>
@@ -669,7 +707,7 @@
           <div class="map-card fade-up" style="transition-delay:0.1s">
             <div>
               <div class="map-placeholder-icon">🗺️</div>
-              <div class="map-placeholder-text">Карта на сайте</div>
+              <div class="map-placeholder-text">Сюда можем добавить виджет яндекса</div>
               <div class="map-placeholder-sub">Москва, 1-я ул. Ямского Поля, 1</div>
             </div>
           </div>
