@@ -311,13 +311,26 @@
     }
 
     .menu-item {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      padding: 24px;
+      display: grid;
+      gap: 16px;
+      padding: 18px;
       border-bottom: 1px solid var(--line);
       border-radius: 24px;
       background: rgba(255, 250, 240, 0.42);
+    }
+
+    .menu-item img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: 18px;
+    }
+
+    .menu-item-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: flex-start;
     }
 
     .menu-item h3 {
@@ -448,32 +461,84 @@
 
         <div class="menu-list">
           <article class="menu-item">
+            <img src="assets/pastrami-indeyka.jfif" alt="Фокачча с пастрами из индейки" />
             <div>
-              <h3>Круассан с лососем</h3>
-              <p>Сливочный сыр, свежий огурец, зелень.</p>
+              <div class="menu-item-head">
+                <h3>Пастрами индейка</h3>
+                <div class="price">845 ₽</div>
+              </div>
+              <p>Фокачча, пастрами из индейки, томаты, имбирные огурцы, горчичный соус, соус чеддер.</p>
             </div>
-            <div class="price">€12</div>
           </article>
           <article class="menu-item">
+            <img src="assets/баклажаны.jfif" alt="Фокачча с баклажанами" />
             <div>
-              <h3>Паста Solo Noi</h3>
-              <p>Томаты, базилик, пармезан, оливковое масло.</p>
+              <div class="menu-item-head">
+                <h3>Баклажаны</h3>
+                <div class="price">725 ₽</div>
+              </div>
+              <p>Фокачча, баклажан фри, томатный соус, домашний песто, пармезан, терияки, масло кунжутное.</p>
             </div>
-            <div class="price">€16</div>
           </article>
           <article class="menu-item">
+            <img src="assets/мортаделла.jfif" alt="Фокачча с мортаделлой" />
             <div>
-              <h3>Крем-суп дня</h3>
-              <p>Сезонные овощи, хрустящая чиабатта.</p>
+              <div class="menu-item-head">
+                <h3>Мортаделла</h3>
+                <div class="price">885 ₽</div>
+              </div>
+              <p>Фокачча, мортаделла, пармезан, страчателла, домашний песто, фисташка.</p>
             </div>
-            <div class="price">€9</div>
           </article>
           <article class="menu-item">
+            <img src="assets/прошутто.jfif" alt="Фокачча с прошутто" />
             <div>
-              <h3>Тирамису</h3>
-              <p>Нежный крем, эспрессо, какао.</p>
+              <div class="menu-item-head">
+                <h3>Прошутто</h3>
+                <div class="price">825 ₽</div>
+              </div>
+              <p>Фокачча, прошутто крудо, рукола, крем из пармезана, бальзамический крем.</p>
             </div>
-            <div class="price">€8</div>
+          </article>
+          <article class="menu-item">
+            <img src="assets/ростбиф.jfif" alt="Фокачча с ростбифом" />
+            <div>
+              <div class="menu-item-head">
+                <h3>Ростбиф</h3>
+                <div class="price">1115 ₽</div>
+              </div>
+              <p>Фокачча с ростбифом, соусом тоннато, луковым конфитюром и руколой.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <img src="assets/салями.jfif" alt="Фокачча с салями" />
+            <div>
+              <div class="menu-item-head">
+                <h3>Салями Милано</h3>
+                <div class="price">795 ₽</div>
+              </div>
+              <p>Фокачча, моцарелла, томатный соус, салями, рукола, бальзамический крем.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <img src="assets/тунец.jfif" alt="Фокачча с тунцом" />
+            <div>
+              <div class="menu-item-head">
+                <h3>Тунец</h3>
+                <div class="price">725 ₽</div>
+              </div>
+              <p>Фокачча, тунец консервированный, салат айсберг, имбирные огурцы, каперсы, соус тоннато.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <img src="assets/цыпленок.jfif" alt="Фокачча с цыплёнком су-вид" />
+            <div>
+              <div class="menu-item-head">
+                <h3>Цыплёнок су-вид</h3>
+                <div class="price">755 ₽</div>
+              </div>
+              <p>Фокачча, курица су-вид, крем пармезан, салат, соус тоннато и свежий томат.</p>
+            </div>
           </article>
         </div>
 
